@@ -1,0 +1,6 @@
+numpy
+pandas
+matplotlib
+python-dotenv
+openai>=1.0.0
+requests 
