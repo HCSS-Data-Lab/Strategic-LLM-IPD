@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-09-02T19:48:30.748726",
+  "shadow_conditions": [
+    0.75
+  ],
+  "temperature_settings": {
+    "anthropic": [
+      0.2,
+      0.5,
+      0.8
+    ],
+    "mistral": [
+      0.2,
+      0.7,
+      1.2
+    ],
+    "gemini": [
+      0.2,
+      0.7,
+      1.2
+    ]
+  },
+  "llm_models": {
+    "OPENAI": "default",
+    "ANTHROPIC": "default",
+    "GOOGLE": "default",
+    "MISTRAL": "default"
+  },
+  "classical_strategies": [
+    "TitForTat",
+    "AlwaysCooperate",
+    "AlwaysDefect",
+    "Random",
+    "GrimTrigger",
+    "Pavlov"
+  ],
+  "behavioral_strategies": [
+    "ForgivingGrimTrigger",
+    "Detective",
+    "SoftGrudger"
+  ],
+  "adaptive_strategies": [
+    "QLearning",
+    "ThompsonSampling",
+    "GradientMetaLearner"
+  ]
+}
