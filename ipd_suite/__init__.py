@@ -20,14 +20,18 @@ from .agents import (
 )
 
 from .tournament import Tournament, TournamentResult, LLMShowdown, MatchHistoryManager
-from .analysis import (
-    calculate_strategic_fingerprint,
-    analyze_rationales,
-    create_fingerprint_visualization,
-    analyze_horizon_awareness,
-    generate_comprehensive_report
-)
-from .utils import load_env_vars, format_history, calculate_payoff
+
+# Analysis module temporarily disabled
+# from .analysis import (
+#     calculate_strategic_fingerprint,
+#     analyze_rationales,
+#     create_fingerprint_visualization,
+#     analyze_horizon_awareness,
+#     generate_comprehensive_report
+# )
+
+# Utils module temporarily disabled  
+# from .utils import load_env_vars, format_history, calculate_payoff
 
 __version__ = "1.0.0"
 __all__ = [
@@ -40,13 +44,13 @@ __all__ = [
     "GPT4Agent", "ClaudeAgent", "MistralAgent", "GeminiAgent",
     
     # Tournament
-    "Tournament", "TournamentResult", "LLMShowdown", "MatchHistoryManager",
+    "Tournament", "TournamentResult", "LLMShowdown", "MatchHistoryManager"
     
-    # Analysis
-    "calculate_strategic_fingerprint", "analyze_rationales",
-    "create_fingerprint_visualization", "analyze_horizon_awareness",
-    "generate_comprehensive_report",
+    # Analysis (temporarily disabled)
+    # "calculate_strategic_fingerprint", "analyze_rationales",
+    # "create_fingerprint_visualization", "analyze_horizon_awareness", 
+    # "generate_comprehensive_report",
     
-    # Utils
-    "load_env_vars", "format_history", "calculate_payoff"
+    # Utils (temporarily disabled)
+    # "load_env_vars", "format_history", "calculate_payoff"
 ]

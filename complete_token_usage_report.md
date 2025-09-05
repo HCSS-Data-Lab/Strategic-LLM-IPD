@@ -282,9 +282,9 @@
 - **Tracking addition**: Anonymous opponent IDs + cross-references
 
 ### Match History Format
-- Anonymous: `"Match 1 vs TitForTat: [(C,C), (D,C), ...]"`
-- Tracking: `"Match 1 vs Opponent_001: [(C,C), (D,C), ...]"`
-- Cross-reference: `"Current opponent: Opponent_001 (previously played in Match X of Phase Y)"`
+- Both modes: `"Match 1 vs Opponent_001: [(C,C), (D,C), ...]"`
+- Tracking mode addition: Cross-reference info like `"Current opponent: Opponent_001 (previously played in Match X of Phase Y)"`
+- Anonymous mode: No cross-reference information provided
 
 ---
 

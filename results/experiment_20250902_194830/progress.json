@@ -1,11 +1,12 @@
 {
   "start_time": "2025-09-02T19:48:30.851215",
   "total_conditions": 1,
-  "completed_conditions": 0,
+  "completed_conditions": 1,
   "current_condition": "shadow_75",
   "total_matches": 1890,
-  "completed_matches": 1134,
-  "estimated_time_remaining": "693 minutes",
+  "completed_matches": 1890,
+  "estimated_time_remaining": "0 minutes",
   "errors": [],
-  "last_update": "2025-09-03T13:08:38.122427"
+  "last_update": "2025-09-03T16:16:35.455761",
+  "status": "complete"
 }

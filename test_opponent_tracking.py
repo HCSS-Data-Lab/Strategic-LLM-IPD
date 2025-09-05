@@ -95,7 +95,7 @@ def test_both_tracking_modes():
     for line in history_section[:6]:  # Show first few lines
         print(line)
     
-    print(f"✅ Anonymous mode: Shows opponent names but no cross-references")
+    print(f"✅ Anonymous mode: Shows anonymous IDs but no cross-references")
     
     print("\n" + "="*50)
     print("MODE 2: OPPONENT TRACKING (Enhanced Mode)")
@@ -184,7 +184,7 @@ def test_both_tracking_modes():
     print("\n📊 COMPARISON SUMMARY:")
     print("-" * 40)
     print("Anonymous Mode:")
-    print("  ✓ Shows actual agent names (TitForTat, Random, GrimTrigger)")
+    print("  ✓ Shows anonymous opponent IDs (Opponent_001, Opponent_002, etc.)")
     print("  ✓ Complete match history with moves")
     print("  ✗ No cross-references to previous encounters")
     print("  ✗ Cannot identify recurring opponents across phases")

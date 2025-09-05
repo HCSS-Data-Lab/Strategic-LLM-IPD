@@ -51,12 +51,8 @@ Game Rules:
         for p in range(1, phase):
             for m in range(matches_per_phase):
                 match_count += 1
-                if enable_tracking:
-                    opponent_id = f"Opponent_{(m % 16) + 1:03d}"  # 16 unique opponents cycling
-                else:
-                    opponents = ["TitForTat", "GrimTrigger", "Random", "Detective", "QLearning", 
-                               "GPT5mini_T1", "Claude4-Sonnet_T02", "Mistral-Medium_T07", "Gemini25Pro_T12"]
-                    opponent_id = opponents[m % len(opponents)]
+                # Both modes now use anonymous opponent IDs
+                opponent_id = f"Opponent_{(m % 16) + 1:03d}"  # 16 unique opponents cycling
                 
                 # Generate sample moves for this match
                 rounds_in_match = max(1, int(avg_rounds * (0.7 + 0.6 * (m / matches_per_phase))))  # Vary length

@@ -48,9 +48,7 @@ class MatchHistoryManager:
     
     def _get_or_create_anonymous_id(self, agent_name: str) -> str:
         """Get or create an anonymous ID for an agent"""
-        if not self.enable_opponent_tracking:
-            return agent_name  # Return actual name if tracking disabled
-            
+        # Always use anonymous IDs for both modes
         if agent_name not in self.agent_id_map:
             anonymous_id = f"Opponent_{self.anonymous_id_counter:03d}"
             self.agent_id_map[agent_name] = anonymous_id
@@ -59,11 +57,12 @@ class MatchHistoryManager:
     
     def _record_encounter(self, llm_agent_id: str, opponent_name: str, phase: int, match_index: int):
         """Record an encounter between LLM agent and opponent for cross-referencing"""
-        if not self.enable_opponent_tracking:
-            return
-            
+        # Always record encounters to ensure consistent ID assignment
         opponent_anonymous_id = self._get_or_create_anonymous_id(opponent_name)
-        self.opponent_encounters[llm_agent_id][opponent_anonymous_id].append((phase, match_index))
+        
+        # Only track encounters for cross-references if tracking is enabled
+        if self.enable_opponent_tracking:
+            self.opponent_encounters[llm_agent_id][opponent_anonymous_id].append((phase, match_index))
     
     def _get_previous_encounters(self, llm_agent_id: str, opponent_name: str) -> List[Tuple[int, int]]:
         """Get list of previous encounters with this opponent"""

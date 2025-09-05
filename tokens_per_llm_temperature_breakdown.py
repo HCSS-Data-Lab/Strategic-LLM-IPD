@@ -43,10 +43,8 @@ Game Rules:
         # Each match line is ~30 chars base + 6 chars per move
         avg_chars_per_match = 30 + (avg_rounds_per_match * 6)
         
-        if enable_tracking:
-            # Anonymous opponent IDs: "Match 1 vs Opponent_001: [(C,C), (D,C)]"
-            # Slightly longer due to "Opponent_001" vs shorter names
-            avg_chars_per_match += 5  # Extra chars for anonymous IDs
+        # Both modes now use anonymous opponent IDs: "Match 1 vs Opponent_001: [(C,C), (D,C)]"
+        # No difference in character count between modes for opponent names
         
         total_history_chars = total_historical_matches * avg_chars_per_match
         
