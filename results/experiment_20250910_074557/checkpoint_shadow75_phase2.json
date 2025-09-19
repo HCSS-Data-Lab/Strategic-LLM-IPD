@@ -1,0 +1,356 @@
+{
+  "timestamp": "2025-09-10T09:26:21.964674",
+  "shadow_condition": 0.75,
+  "completed_phases": 2,
+  "current_population": {
+    "TitForTat": 1,
+    "WinStayLoseShift": 1,
+    "SuspiciousTitForTat": 4,
+    "Random": 1,
+    "Alternator": 1,
+    "Bayesian": 1,
+    "ForgivingGrimTrigger": 1,
+    "Detective": 1,
+    "SoftGrudger": 1,
+    "QLearning": 1,
+    "ThompsonSampling": 1,
+    "GradientMetaLearner": 2,
+    "GPT5mini_T1": 4,
+    "GPT5nano_T1": 1,
+    "Claude4-Sonnet_T02": 1,
+    "Claude4-Sonnet_T05": 1,
+    "Claude4-Sonnet_T08": 1,
+    "Mistral-Medium_T02": 1,
+    "Mistral-Medium_T07": 1,
+    "Gemini20Flash_T07": 1,
+    "Gemini20Flash_T12": 1
+  },
+  "population_history": [
+    {
+      "TitForTat": 1,
+      "GrimTrigger": 1,
+      "WinStayLoseShift": 1,
+      "GenerousTitForTat": 1,
+      "SuspiciousTitForTat": 1,
+      "Prober": 1,
+      "Random": 1,
+      "Gradual": 1,
+      "Alternator": 1,
+      "Bayesian": 1,
+      "ForgivingGrimTrigger": 1,
+      "Detective": 1,
+      "SoftGrudger": 1,
+      "QLearning": 1,
+      "ThompsonSampling": 1,
+      "GradientMetaLearner": 1,
+      "GPT5mini_T1": 1,
+      "GPT5nano_T1": 1,
+      "GPT4.1mini_T1": 1,
+      "Claude4-Sonnet_T02": 1,
+      "Claude4-Sonnet_T05": 1,
+      "Claude4-Sonnet_T08": 1,
+      "Mistral-Medium_T02": 1,
+      "Mistral-Medium_T07": 1,
+      "Mistral-Medium_T12": 1,
+      "Gemini20Flash_T02": 1,
+      "Gemini20Flash_T07": 1,
+      "Gemini20Flash_T12": 1
+    },
+    {
+      "TitForTat": 1,
+      "GrimTrigger": 1,
+      "WinStayLoseShift": 1,
+      "SuspiciousTitForTat": 2,
+      "Prober": 1,
+      "Random": 1,
+      "Gradual": 1,
+      "Alternator": 1,
+      "Bayesian": 1,
+      "ForgivingGrimTrigger": 1,
+      "Detective": 1,
+      "SoftGrudger": 1,
+      "QLearning": 1,
+      "ThompsonSampling": 1,
+      "GradientMetaLearner": 1,
+      "GPT5mini_T1": 2,
+      "GPT5nano_T1": 1,
+      "Claude4-Sonnet_T02": 1,
+      "Claude4-Sonnet_T05": 1,
+      "Claude4-Sonnet_T08": 1,
+      "Mistral-Medium_T02": 1,
+      "Mistral-Medium_T07": 1,
+      "Mistral-Medium_T12": 1,
+      "Gemini20Flash_T02": 1,
+      "Gemini20Flash_T07": 1,
+      "Gemini20Flash_T12": 1
+    },
+    {
+      "TitForTat": 1,
+      "WinStayLoseShift": 1,
+      "SuspiciousTitForTat": 4,
+      "Random": 1,
+      "Alternator": 1,
+      "Bayesian": 1,
+      "ForgivingGrimTrigger": 1,
+      "Detective": 1,
+      "SoftGrudger": 1,
+      "QLearning": 1,
+      "ThompsonSampling": 1,
+      "GradientMetaLearner": 2,
+      "GPT5mini_T1": 4,
+      "GPT5nano_T1": 1,
+      "Claude4-Sonnet_T02": 1,
+      "Claude4-Sonnet_T05": 1,
+      "Claude4-Sonnet_T08": 1,
+      "Mistral-Medium_T02": 1,
+      "Mistral-Medium_T07": 1,
+      "Gemini20Flash_T07": 1,
+      "Gemini20Flash_T12": 1
+    }
+  ],
+  "initial_agents_config": [
+    {
+      "name": "TitForTat",
+      "class": "TitForTat",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "GrimTrigger",
+      "class": "GrimTrigger",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "WinStayLoseShift",
+      "class": "WinStayLoseShift",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "GenerousTitForTat",
+      "class": "GenerousTitForTat",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "SuspiciousTitForTat",
+      "class": "SuspiciousTitForTat",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "Prober",
+      "class": "Prober",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "Random",
+      "class": "Random",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "Gradual",
+      "class": "Gradual",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "Alternator",
+      "class": "Alternator",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "Bayesian",
+      "class": "Bayesian",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "ForgivingGrimTrigger",
+      "class": "ForgivingGrimTrigger",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "Detective",
+      "class": "Detective",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "SoftGrudger",
+      "class": "SoftGrudger",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "QLearning",
+      "class": "QLearningAgent",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "ThompsonSampling",
+      "class": "ThompsonSampling",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "GradientMetaLearner",
+      "class": "GradientMetaLearner",
+      "model": null,
+      "temperature": null,
+      "is_llm": false
+    },
+    {
+      "name": "GPT5mini_T1",
+      "class": "GPT4Agent",
+      "model": "gpt-5-mini",
+      "temperature": 1.0,
+      "is_llm": true
+    },
+    {
+      "name": "GPT5nano_T1",
+      "class": "GPT4Agent",
+      "model": "gpt-5-nano",
+      "temperature": 1.0,
+      "is_llm": true
+    },
+    {
+      "name": "GPT4.1mini_T1",
+      "class": "GPT4Agent",
+      "model": "gpt-4.1-mini",
+      "temperature": 1.0,
+      "is_llm": true
+    },
+    {
+      "name": "Claude4-Sonnet_T02",
+      "class": "ClaudeAgent",
+      "model": "claude-sonnet-4-20250514",
+      "temperature": 0.2,
+      "is_llm": true
+    },
+    {
+      "name": "Claude4-Sonnet_T05",
+      "class": "ClaudeAgent",
+      "model": "claude-sonnet-4-20250514",
+      "temperature": 0.5,
+      "is_llm": true
+    },
+    {
+      "name": "Claude4-Sonnet_T08",
+      "class": "ClaudeAgent",
+      "model": "claude-sonnet-4-20250514",
+      "temperature": 0.8,
+      "is_llm": true
+    },
+    {
+      "name": "Mistral-Medium_T02",
+      "class": "MistralAgent",
+      "model": "mistral-medium-2508",
+      "temperature": 0.2,
+      "is_llm": true
+    },
+    {
+      "name": "Mistral-Medium_T07",
+      "class": "MistralAgent",
+      "model": "mistral-medium-2508",
+      "temperature": 0.7,
+      "is_llm": true
+    },
+    {
+      "name": "Mistral-Medium_T12",
+      "class": "MistralAgent",
+      "model": "mistral-medium-2508",
+      "temperature": 1.2,
+      "is_llm": true
+    },
+    {
+      "name": "Gemini20Flash_T02",
+      "class": "GeminiAgent",
+      "model": "gemini-2.0-flash",
+      "temperature": 0.2,
+      "is_llm": true
+    },
+    {
+      "name": "Gemini20Flash_T07",
+      "class": "GeminiAgent",
+      "model": "gemini-2.0-flash",
+      "temperature": 0.7,
+      "is_llm": true
+    },
+    {
+      "name": "Gemini20Flash_T12",
+      "class": "GeminiAgent",
+      "model": "gemini-2.0-flash",
+      "temperature": 1.2,
+      "is_llm": true
+    }
+  ],
+  "experiment_config": {
+    "timestamp": "2025-09-10T07:45:57.121474",
+    "shadow_conditions": [
+      0.75
+    ],
+    "temperature_settings": {
+      "anthropic": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "mistral": [
+        0.2,
+        0.7,
+        1.2
+      ],
+      "gemini": [
+        0.2,
+        0.7,
+        1.2
+      ]
+    },
+    "llm_models": {
+      "OPENAI": "default",
+      "ANTHROPIC": "default",
+      "GOOGLE": "default",
+      "MISTRAL": "default"
+    },
+    "classical_strategies": [
+      "TitForTat",
+      "AlwaysCooperate",
+      "AlwaysDefect",
+      "Random",
+      "GrimTrigger",
+      "Pavlov"
+    ],
+    "behavioral_strategies": [
+      "ForgivingGrimTrigger",
+      "Detective",
+      "SoftGrudger"
+    ],
+    "adaptive_strategies": [
+      "QLearning",
+      "ThompsonSampling",
+      "GradientMetaLearner"
+    ]
+  }
+}

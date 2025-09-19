@@ -18,6 +18,33 @@ from pathlib import Path
 from collections import OrderedDict
 import json
 
+def get_memory_mode_from_experiment(experiment_name):
+    """
+    Determine memory mode from experiment name.
+    """
+    # Anonymous Memory Mode experiments
+    anonymous_experiments = [
+        "experiment_20250908_081108",  # 5%
+        "experiment_20250905_152754",  # 10%
+        "experiment_20250905_152805",  # 25%
+        "experiment_20250905_152321"   # 75%
+    ]
+
+    # Opponent Tracking Mode experiments
+    tracking_experiments = [
+        "experiment_20250912_153315",  # 5%
+        "experiment_20250911_112723",  # 10%
+        "experiment_20250910_074608",  # 25%
+        "experiment_20250910_074557"   # 75%
+    ]
+
+    if experiment_name in anonymous_experiments:
+        return "Anonymous Memory"
+    elif experiment_name in tracking_experiments:
+        return "Tracking Memory"
+    else:
+        return "Unknown Memory"
+
 def extract_llm_info(agent_name):
     """
     Extract LLM model and variant/temperature from agent name.
@@ -26,8 +53,8 @@ def extract_llm_info(agent_name):
     Claude models: Claude4-Sonnet_T02 -> model family: Claude4-Sonnet, variant: T02
     Gemini models: Gemini20Flash_T02 -> model family: Gemini-2.0-Flash, variant: T02
     """
-    # OpenAI models pattern (GPT5mini, GPT5nano, GPT4mini - these are different models, not temperatures)
-    openai_pattern = r'^(GPT\d+\w*)_T(\d+)'
+    # OpenAI models pattern (GPT5mini, GPT5nano, GPT4.1mini - these are different models, not temperatures)
+    openai_pattern = r'^(GPT\d+(?:\.\d+)?\w*)_T(\d+)'
     match = re.match(openai_pattern, agent_name)
     if match:
         model_variant = match.group(1)
@@ -481,7 +508,9 @@ def process_experiment(experiment_path):
         
         if footprints:
             # Create radar chart for this model family with shadow length in title
-            chart_title = f"Strategic Footprints - {model_family} Models (Shadow {shadow_length})"
+            # Get memory mode for title
+            memory_mode = get_memory_mode_from_experiment(experiment_name)
+            chart_title = f"{memory_mode} - {model_family} Models (Shadow {shadow_length})"
             # Create safe filename by replacing spaces and special characters
             safe_model_name = model_family.lower().replace(' ', '_').replace('-', '_')
             save_path = os.path.join(output_dir, f"strategic_footprint_{safe_model_name}_{experiment_name}.png")
@@ -519,7 +548,9 @@ def process_experiment(experiment_path):
         
         if extended_footprints:
             # Create extended radar chart
-            extended_chart_title = f"Extended Strategic Footprints - {model_family} Models (Shadow {shadow_length})"
+            # Get memory mode for title
+            memory_mode = get_memory_mode_from_experiment(experiment_name)
+            extended_chart_title = f"{memory_mode} - {model_family} Models (Shadow {shadow_length})"
             extended_save_path = os.path.join(output_dir, f"extended_strategic_footprint_{safe_model_name}_{experiment_name}.png")
             create_radar_chart(extended_footprints, extended_chart_title, extended_save_path, model_family, "extended")
             print(f"    Saved {model_family} extended radar chart: {extended_save_path}")

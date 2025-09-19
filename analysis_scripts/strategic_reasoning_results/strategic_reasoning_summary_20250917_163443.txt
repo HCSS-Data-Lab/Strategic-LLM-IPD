@@ -1,0 +1,61 @@
+STRATEGIC REASONING ANALYSIS SUMMARY
+==================================================
+
+MATCH HISTORY SUMMARY
+----------------------------------------
+                      has_history_awareness_count  ...  history_awareness_score_mean
+provider temperature                               ...                              
+GPT4     1.0                                 1955  ...                         5.280
+GPT5     1.0                                 1872  ...                         1.315
+Gemini   0.2                                 2100  ...                         6.370
+         0.7                                 2188  ...                         6.172
+         1.2                                 1847  ...                         6.263
+
+[5 rows x 8 columns]
+
+SHADOW FUTURE SUMMARY
+----------------------------------------
+                                       has_shadow_awareness_count  ...  shadow_awareness_score_mean
+provider temperature shadow_condition                              ...                             
+GPT4     1.0         0.02                                    1180  ...                        2.146
+                     0.05                                     660  ...                        2.258
+                     0.75                                     115  ...                        1.452
+GPT5     1.0         0.02                                     783  ...                        1.622
+                     0.05                                     438  ...                        1.247
+                     0.75                                     651  ...                        5.416
+Gemini   0.2         0.02                                    1564  ...                        1.935
+                     0.05                                     470  ...                        2.421
+                     0.75                                      66  ...                        1.379
+         0.7         0.02                                    1543  ...                        2.010
+                     0.05                                     539  ...                        1.796
+                     0.75                                     106  ...                        1.094
+         1.2         0.02                                    1153  ...                        2.395
+                     0.05                                     585  ...                        2.289
+                     0.75                                     109  ...                        0.771
+
+[15 rows x 7 columns]
+
+FORMAL METHODS SUMMARY
+----------------------------------------
+                      uses_formal_methods_count  ...  formal_methods_score_mean
+provider temperature                             ...                           
+GPT4     1.0                               1955  ...                      2.389
+GPT5     1.0                               1872  ...                      1.589
+Gemini   0.2                               2100  ...                      1.596
+         0.7                               2188  ...                      1.635
+         1.2                               1847  ...                      1.659
+
+[5 rows x 8 columns]
+
+TEMPERATURE SENSITIVITY
+----------------------------------------
+                      high_sophistication_rate  ...  avg_formal_score
+provider temperature                            ...                  
+GPT4     1.0                             0.669  ...             2.389
+GPT5     1.0                             0.387  ...             1.589
+Gemini   0.2                             0.389  ...             1.596
+         0.7                             0.375  ...             1.635
+         1.2                             0.412  ...             1.659
+
+[5 rows x 3 columns]
+

@@ -1,0 +1,13 @@
+shadow_condition,agent,horizon_awareness,opponent_modeling
+0.1,GPT5mini_T1_p5i1,0.989247311827957,1.0
+0.1,GPT5nano_T1_p5i1,1.0,1.0
+0.1,GPT4.1mini_T1_p5i1,0.9450980392156862,1.0
+0.1,Claude4-Sonnet_T02_p5i1,0.8864628820960698,1.0
+0.1,Claude4-Sonnet_T05_p5i1,0.9222222222222223,1.0
+0.1,Claude4-Sonnet_T08_p5i1,0.8981481481481481,1.0
+0.1,Mistral-Medium_T02_p5i1,0.9255663430420712,1.0
+0.1,Mistral-Medium_T07_p5i1,0.9407894736842105,1.0
+0.1,Mistral-Medium_T12_p5i1,0.95,1.0
+0.1,Gemini20Flash_T02_p5i1,0.8958990536277602,1.0
+0.1,Gemini20Flash_T07_p5i1,0.9239543726235742,1.0
+0.1,Gemini20Flash_T12_p5i1,0.908675799086758,1.0

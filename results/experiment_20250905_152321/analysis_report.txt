@@ -1,0 +1,232 @@
+IPD EXPERIMENT ANALYSIS REPORT
+==================================================
+
+OVERALL PERFORMANCE RANKINGS
+------------------------------
+1. GPT5mini_T1: 4.110 points/move
+2. GPT5mini_T1_p1i1: 4.083 points/move
+3. GPT5nano_T1: 3.910 points/move
+4. SuspiciousTitForTat_p1i1: 3.871 points/move
+5. SuspiciousTitForTat_p2i2: 3.788 points/move
+6. GPT5mini_T1_p2i2: 3.615 points/move
+7. ThompsonSampling_p1i1: 3.444 points/move
+8. GPT5nano_T1_p1i1: 3.438 points/move
+9. Random_p1i1: 3.400 points/move
+10. QLearning_p2i1: 3.231 points/move
+11. SuspiciousTitForTat_p2i1: 3.162 points/move
+12. GPT5mini_T1_p3i3: 3.125 points/move
+13. GradientMetaLearner_p1i1: 3.118 points/move
+14. GPT5mini_T1_p2i1: 3.079 points/move
+15. GradientMetaLearner_p2i1: 2.941 points/move
+16. ThompsonSampling_p2i2: 2.905 points/move
+17. SuspiciousTitForTat_p3i4: 2.868 points/move
+18. ThompsonSampling_p2i1: 2.864 points/move
+19. Random_p2i1: 2.861 points/move
+20. Random_p3i1: 2.848 points/move
+21. GPT5mini_T1_p3i1: 2.838 points/move
+22. Detective_p1i1: 2.829 points/move
+23. SuspiciousTitForTat_p3i3: 2.810 points/move
+24. SuspiciousTitForTat_p3i1: 2.771 points/move
+25. Claude4-Sonnet_T02: 2.763 points/move
+26. QLearning_p1i1: 2.750 points/move
+27. Random_p3i2: 2.676 points/move
+28. SuspiciousTitForTat_p3i2: 2.675 points/move
+29. Claude4-Sonnet_T02_p1i1: 2.658 points/move
+30. SoftGrudger_p1i1: 2.647 points/move
+31. GPT4.1mini_T1: 2.647 points/move
+32. SoftGrudger_p2i1: 2.628 points/move
+33. QLearning_p3i1: 2.619 points/move
+34. Prober_p1i1: 2.611 points/move
+35. Mistral-Medium_T02: 2.610 points/move
+36. Alternator_p1i1: 2.606 points/move
+37. Gradual_p1i1: 2.600 points/move
+38. Mistral-Medium_T12: 2.591 points/move
+39. GPT5mini_T1_p3i2: 2.571 points/move
+40. Detective_p2i1: 2.561 points/move
+41. ForgivingGrimTrigger_p1i1: 2.558 points/move
+42. Claude4-Sonnet_T05: 2.546 points/move
+43. Claude4-Sonnet_T05_p1i1: 2.541 points/move
+44. Gemini20Flash_T12: 2.539 points/move
+45. Gemini20Flash_T02: 2.531 points/move
+46. Mistral-Medium_T12_p1i1: 2.528 points/move
+47. Gemini20Flash_T07: 2.522 points/move
+48. Claude4-Sonnet_T02_p2i1: 2.515 points/move
+49. QLearning_p3i2: 2.514 points/move
+50. ThompsonSampling_p3i2: 2.514 points/move
+51. Claude4-Sonnet_T08: 2.513 points/move
+52. SuspiciousTitForTat_p4i3: 2.500 points/move
+53. Claude4-Sonnet_T08_p1i1: 2.500 points/move
+54. Mistral-Medium_T07: 2.488 points/move
+55. Random_p2i2: 2.487 points/move
+56. Gemini20Flash_T07_p2i1: 2.486 points/move
+57. Mistral-Medium_T02_p2i1: 2.485 points/move
+58. Bayesian_p1i1: 2.474 points/move
+59. GPT5mini_T1_p4i2: 2.474 points/move
+60. WinStayLoseShift_p1i1: 2.469 points/move
+61. GrimTrigger_p1i1: 2.463 points/move
+62. SuspiciousTitForTat_p4i1: 2.457 points/move
+63. Claude4-Sonnet_T08_p2i1: 2.439 points/move
+64. Mistral-Medium_T02_p1i1: 2.438 points/move
+65. Prober_p2i1: 2.432 points/move
+66. SuspiciousTitForTat_p4i2: 2.412 points/move
+67. SuspiciousTitForTat_p4i4: 2.412 points/move
+68. Bayesian_p3i1: 2.410 points/move
+69. GPT5mini_T1_p4i3: 2.405 points/move
+70. GradientMetaLearner_p3i1: 2.400 points/move
+71. Gemini20Flash_T07_p1i1: 2.382 points/move
+72. TitForTat_p1i1: 2.378 points/move
+73. WinStayLoseShift_p2i1: 2.375 points/move
+74. SuspiciousTitForTat_p4i5: 2.375 points/move
+75. ThompsonSampling_p3i3: 2.371 points/move
+76. ThompsonSampling_p4i3: 2.371 points/move
+77. GenerousTitForTat_p1i1: 2.361 points/move
+78. GPT5nano_T1_p2i2: 2.351 points/move
+79. Bayesian_p2i1: 2.333 points/move
+80. Gemini20Flash_T02_p1i1: 2.333 points/move
+81. ForgivingGrimTrigger_p2i1: 2.326 points/move
+82. Claude4-Sonnet_T05_p2i1: 2.324 points/move
+83. Mistral-Medium_T07_p1i1: 2.323 points/move
+84. QLearning_p4i3: 2.318 points/move
+85. GPT5nano_T1_p2i1: 2.316 points/move
+86. GPT5mini_T1_p4i1: 2.314 points/move
+87. Claude4-Sonnet_T02_p3i1: 2.263 points/move
+88. GPT4.1mini_T1_p1i1: 2.250 points/move
+89. Gemini20Flash_T12_p1i1: 2.250 points/move
+90. ForgivingGrimTrigger_p3i1: 2.229 points/move
+91. GrimTrigger_p2i1: 2.222 points/move
+92. ThompsonSampling_p4i1: 2.211 points/move
+93. Gradual_p2i1: 2.206 points/move
+94. GradientMetaLearner_p4i1: 2.184 points/move
+95. WinStayLoseShift_p3i1: 2.167 points/move
+96. SuspiciousTitForTat_p4i6: 2.154 points/move
+97. TitForTat_p2i1: 2.143 points/move
+98. GPT5nano_T1_p3i2: 2.143 points/move
+99. GPT5mini_T1_p4i5: 2.128 points/move
+100. Gemini20Flash_T07_p3i1: 2.121 points/move
+101. Detective_p3i1: 2.114 points/move
+102. Claude4-Sonnet_T08_p3i1: 2.079 points/move
+103. SoftGrudger_p3i1: 2.077 points/move
+104. Alternator_p2i1: 2.059 points/move
+105. ThompsonSampling_p4i2: 2.059 points/move
+106. Prober_p3i1: 2.051 points/move
+107. QLearning_p4i2: 2.025 points/move
+108. Random_p4i2: 2.000 points/move
+109. GPT5nano_T1_p3i1: 2.000 points/move
+110. Mistral-Medium_T12_p2i1: 1.929 points/move
+111. Claude4-Sonnet_T05_p3i1: 1.917 points/move
+112. GPT5mini_T1_p4i4: 1.917 points/move
+113. Gemini20Flash_T07_p4i1: 1.903 points/move
+114. Detective_p4i1: 1.895 points/move
+115. QLearning_p5i1: 1.875 points/move
+116. ThompsonSampling_p3i1: 1.853 points/move
+117. Mistral-Medium_T02_p3i1: 1.848 points/move
+118. SuspiciousTitForTat_p5i9: 1.775 points/move
+119. Random_p4i3: 1.774 points/move
+120. QLearning_p4i1: 1.765 points/move
+121. Bayesian_p4i1: 1.756 points/move
+122. ThompsonSampling_p5i1: 1.743 points/move
+123. GPT5mini_T1_p5i2: 1.719 points/move
+124. QLearning_p5i3: 1.719 points/move
+125. GPT5mini_T1_p5i1: 1.707 points/move
+126. Claude4-Sonnet_T02_p4i1: 1.686 points/move
+127. SuspiciousTitForTat_p5i2: 1.667 points/move
+128. Random_p4i1: 1.632 points/move
+129. SuspiciousTitForTat_p5i1: 1.625 points/move
+130. GPT5mini_T1_p5i7: 1.622 points/move
+131. GPT5mini_T1_p5i4: 1.606 points/move
+132. SuspiciousTitForTat_p5i3: 1.600 points/move
+133. QLearning_p5i2: 1.595 points/move
+134. ThompsonSampling_p5i4: 1.595 points/move
+135. SuspiciousTitForTat_p5i8: 1.576 points/move
+136. SuspiciousTitForTat_p5i10: 1.571 points/move
+137. SuspiciousTitForTat_p5i5: 1.564 points/move
+138. ThompsonSampling_p5i2: 1.558 points/move
+139. SuspiciousTitForTat_p5i6: 1.485 points/move
+140. SuspiciousTitForTat_p5i4: 1.429 points/move
+141. SuspiciousTitForTat_p5i7: 1.333 points/move
+142. GPT5mini_T1_p5i3: 1.326 points/move
+143. GPT5mini_T1_p5i5: 1.325 points/move
+144. GPT5mini_T1_p5i6: 1.281 points/move
+145. ForgivingGrimTrigger_p4i1: 1.270 points/move
+146. WinStayLoseShift_p4i1: 1.267 points/move
+147. Claude4-Sonnet_T08_p4i1: 1.257 points/move
+148. Gemini20Flash_T07_p5i1: 1.231 points/move
+149. GradientMetaLearner_p5i1: 1.200 points/move
+150. ThompsonSampling_p5i3: 1.171 points/move
+151. QLearning_p5i4: 0.950 points/move
+152. Detective_p5i1: 0.861 points/move
+
+
+STRATEGIC FINGERPRINT SUMMARY
+------------------------------
+
+shadow_75:
+  Alternator_p1i1: P(C|CC)=0.000, P(C|CD)=0.000, P(C|DC)=1.000, P(C|DD)=0.500
+  Alternator_p2i1: P(C|CC)=0.000, P(C|CD)=0.000, P(C|DC)=0.500, P(C|DD)=1.000
+  Bayesian_p1i1: P(C|CC)=1.000, P(C|CD)=0.000, P(C|DC)=1.000, P(C|DD)=0.500
+  Bayesian_p2i1: P(C|CC)=1.000, P(C|CD)=0.000, P(C|DC)=0.500, P(C|DD)=0.000
+  Bayesian_p3i1: P(C|CC)=1.000, P(C|CD)=0.000, P(C|DC)=1.000, P(C|DD)=0.000
+
+
+HORIZON AWARENESS ANALYSIS
+------------------------------
+Claude4-Sonnet_T02: 1.000
+Claude4-Sonnet_T02_p1i1: 1.000
+Claude4-Sonnet_T02_p2i1: 1.000
+Claude4-Sonnet_T02_p3i1: 1.000
+Claude4-Sonnet_T05: 1.000
+Claude4-Sonnet_T05_p1i1: 1.000
+Claude4-Sonnet_T08: 1.000
+Claude4-Sonnet_T05_p3i1: 1.000
+Claude4-Sonnet_T08_p1i1: 1.000
+Claude4-Sonnet_T08_p2i1: 1.000
+Claude4-Sonnet_T08_p4i1: 1.000
+Claude4-Sonnet_T08_p3i1: 1.000
+GPT5mini_T1_p3i1: 1.000
+GPT5mini_T1_p3i2: 1.000
+GPT4.1mini_T1: 1.000
+GPT4.1mini_T1_p1i1: 1.000
+GPT5mini_T1: 1.000
+GPT5mini_T1_p1i1: 1.000
+GPT5mini_T1_p2i1: 1.000
+GPT5mini_T1_p2i2: 1.000
+GPT5mini_T1_p4i2: 1.000
+GPT5mini_T1_p4i3: 1.000
+GPT5mini_T1_p3i3: 1.000
+GPT5mini_T1_p4i1: 1.000
+GPT5mini_T1_p4i4: 1.000
+GPT5mini_T1_p4i5: 1.000
+GPT5mini_T1_p5i2: 1.000
+GPT5mini_T1_p5i1: 1.000
+Mistral-Medium_T12_p2i1: 1.000
+Mistral-Medium_T12: 1.000
+GPT5mini_T1_p5i3: 1.000
+GPT5mini_T1_p5i4: 1.000
+GPT5mini_T1_p5i6: 1.000
+GPT5nano_T1: 1.000
+GPT5nano_T1_p2i1: 1.000
+GPT5nano_T1_p1i1: 1.000
+GPT5nano_T1_p3i2: 1.000
+GPT5nano_T1_p3i1: 1.000
+GPT5nano_T1_p2i2: 1.000
+Mistral-Medium_T07_p1i1: 1.000
+Mistral-Medium_T12_p1i1: 1.000
+Gemini20Flash_T12_p1i1: 1.000
+Mistral-Medium_T02: 1.000
+Gemini20Flash_T07_p1i1: 1.000
+Mistral-Medium_T07: 1.000
+Mistral-Medium_T02_p1i1: 1.000
+GPT5mini_T1_p5i5: 0.975
+Gemini20Flash_T07_p5i1: 0.974
+Claude4-Sonnet_T05_p2i1: 0.973
+GPT5mini_T1_p5i7: 0.972
+Mistral-Medium_T02_p2i1: 0.970
+Mistral-Medium_T02_p3i1: 0.970
+Gemini20Flash_T07: 0.950
+Claude4-Sonnet_T02_p4i1: 0.943
+Gemini20Flash_T07_p2i1: 0.943
+Gemini20Flash_T07_p3i1: 0.939
+Gemini20Flash_T07_p4i1: 0.903
+Gemini20Flash_T02_p1i1: 0.308
+Gemini20Flash_T12: 0.263
+Gemini20Flash_T02: 0.140

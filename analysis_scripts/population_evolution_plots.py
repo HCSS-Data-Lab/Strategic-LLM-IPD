@@ -20,15 +20,15 @@ def load_experiment_data(analysis_file: str):
 def get_strategy_category_and_color(strategy: str):
     """Get category and color for a strategy with logical grouping."""
     
-    # Classical strategies - blues
+    # Classical strategies - much better color distinction
     classical_strategies = {
         'TitForTat': '#1f77b4',           # blue
         'GrimTrigger': '#aec7e8',         # light blue
-        'SuspiciousTitForTat': '#2ca02c', # green
+        'SuspiciousTitForTat': '#ff6600', # bright orange (very distinct from blue)
         'GenerousTitForTat': '#98df8a',   # light green
         'ForgivingGrimTrigger': '#ff7f0e', # orange
         'Gradual': '#ffbb78',             # light orange
-        'SoftGrudger': '#d62728',         # red
+        'SoftGrudger': '#2ca02c',         # green
         'Prober': '#ff9896',              # light red
         'Detective': '#9467bd',           # purple
         'Alternator': '#c5b0d5',          # light purple
@@ -44,56 +44,56 @@ def get_strategy_category_and_color(strategy: str):
         'GradientMetaLearner': '#bcbd22'   # olive
     }
     
-    # LLM strategies with temperature variants
-    # Anthropic (Claude) - blues with temperature gradients
+    # LLM strategies with temperature variants - improved color distinction
+    # Anthropic (Claude) - distinct blues
     if 'Claude4-Sonnet' in strategy:
         if '_T02' in strategy:
-            return 'Anthropic', '#08519c'  # dark blue
+            return 'Anthropic', '#08306b'  # very dark blue
         elif '_T05' in strategy:
-            return 'Anthropic', '#3182bd'  # medium blue
+            return 'Anthropic', '#2171b5'  # medium blue
         elif '_T08' in strategy:
             return 'Anthropic', '#6baed6'  # light blue
-    
-    # Mistral - oranges with temperature gradients
-    elif 'Mistral-Large' in strategy:
+
+    # Mistral - distinct oranges/reds
+    elif 'Mistral-Medium' in strategy:
         if '_T02' in strategy:
-            return 'Mistral', '#d94801'    # dark orange
+            return 'Mistral', '#a63603'    # very dark orange
         elif '_T07' in strategy:
-            return 'Mistral', '#fd8d3c'    # medium orange
+            return 'Mistral', '#e6550d'    # medium orange
         elif '_T12' in strategy:
-            return 'Mistral', '#fdbe85'    # light orange
-    
-    # Gemini - greens with temperature gradients
-    elif 'Gemini25Pro' in strategy:
+            return 'Mistral', '#fd8d3c'    # light orange
+
+    # Gemini - distinct greens
+    elif 'Gemini20Flash' in strategy:
         if '_T02' in strategy:
-            return 'Gemini', '#238b45'     # dark green
+            return 'Gemini', '#00441b'     # very dark green
         elif '_T07' in strategy:
-            return 'Gemini', '#66c2a4'     # medium green
+            return 'Gemini', '#238b45'     # medium green
         elif '_T12' in strategy:
-            return 'Gemini', '#b2e0ab'     # light green
-    
-    # OpenAI - reds/purples with model distinctions
-    elif 'GPT5nanomini' in strategy:
-        return 'OpenAI', '#cb181d'         # red
+            return 'Gemini', '#74c476'     # light green
+
+    # OpenAI - distinct purples/magentas for better contrast
+    elif 'GPT5mini' in strategy:
+        return 'OpenAI', '#88419d'         # purple
     elif 'GPT5nano' in strategy:
-        return 'OpenAI', '#fb6a4a'         # light red
-    elif 'GPT4mini' in strategy:
-        return 'OpenAI', '#fcae91'         # very light red
+        return 'OpenAI', '#8c6bb1'         # light purple
+    elif 'GPT4.1mini' in strategy:
+        return 'OpenAI', '#9ebcda'         # very light purple
     
-    # Check classical strategies
+    # Check classical strategies - use exact match to avoid substring issues
     for strat_name, color in classical_strategies.items():
-        if strat_name in strategy:
+        if strategy == strat_name:
             return 'Classical', color
-    
-    # Check adaptive strategies
+
+    # Check adaptive strategies - use exact match to avoid substring issues
     for strat_name, color in adaptive_colors.items():
-        if strat_name in strategy:
+        if strategy == strat_name:
             return 'Adaptive', color
     
     # Default
     return 'Other', '#666666'
 
-def create_population_evolution_plot(experiment_data, experiment_name, shadow_condition):
+def create_population_evolution_plot(experiment_data, experiment_name, shadow_condition, memory_mode="Unknown"):
     """Create a stacked area plot for population evolution."""
     
     phases = experiment_data.get('phases', {})
@@ -160,7 +160,7 @@ def create_population_evolution_plot(experiment_data, experiment_name, shadow_co
     # Customize the plot
     ax.set_xlabel('Evolutionary Phase', fontsize=12, fontweight='bold')
     ax.set_ylabel('Agent Population', fontsize=12, fontweight='bold')
-    ax.set_title(f'Population Evolution - Shadow {shadow_condition*100:.0f}%', 
+    ax.set_title(f'Population Evolution - Shadow {shadow_condition*100:.0f}% ({memory_mode})',
                 fontsize=14, fontweight='bold')
     
     # Set x-axis ticks
@@ -202,20 +202,34 @@ def create_population_evolution_plot(experiment_data, experiment_name, shadow_co
 
 def format_strategy_name_for_legend(strategy: str) -> str:
     """Format strategy names for legend display."""
-    
+
     # Handle temperature variants for LLM agents
     if '_T' in strategy and any(llm in strategy for llm in ['GPT', 'Claude', 'Mistral', 'Gemini', 'GPT4mini']):
         parts = strategy.split('_T')
         if len(parts) == 2:
             base_name = parts[0]
             temp = parts[1]
-            # Convert temperature format
-            if temp.startswith('0') and len(temp) == 2:
-                temp_val = f"0.{temp[1:]}"
-            elif temp.isdigit() and len(temp) <= 2:
-                temp_val = f"0.{temp}" if len(temp) == 1 else f"1.{temp[1:]}" if temp.startswith('1') else temp
+            # Convert temperature format to proper decimal
+            if temp == '02':
+                temp_val = "0.2"
+            elif temp == '05':
+                temp_val = "0.5"
+            elif temp == '07':
+                temp_val = "0.7"
+            elif temp == '08':
+                temp_val = "0.8"
+            elif temp == '12':
+                temp_val = "1.2"
+            elif temp == '1':
+                temp_val = "1.0"
             else:
-                temp_val = temp
+                # Handle other formats
+                if len(temp) == 2 and temp.startswith('0'):
+                    temp_val = f"0.{temp[1]}"
+                elif len(temp) == 2 and temp.startswith('1'):
+                    temp_val = f"1.{temp[1]}"
+                else:
+                    temp_val = temp
             return f"{base_name} (T={temp_val})"
     
     # Handle other naming conventions
@@ -234,11 +248,36 @@ def format_strategy_name_for_legend(strategy: str) -> str:
     
     return replacements.get(strategy, strategy)
 
+def get_memory_mode(experiment_name: str) -> str:
+    """Get memory mode based on experiment name mapping"""
+    # Anonymous Memory Mode
+    anonymous_experiments = [
+        "experiment_20250908_081108",  # 0.05
+        "experiment_20250905_152754",  # 0.10
+        "experiment_20250905_152805",  # 0.25
+        "experiment_20250905_152321"   # 0.75
+    ]
+
+    # Opponent Tracking Mode
+    tracking_experiments = [
+        "experiment_20250912_153315",  # 0.05
+        "experiment_20250911_112723",  # 0.10
+        "experiment_20250910_074608",  # 0.25
+        "experiment_20250910_074557"   # 0.75
+    ]
+
+    if experiment_name in anonymous_experiments:
+        return "Anonymous Memory"
+    elif experiment_name in tracking_experiments:
+        return "Opponent Tracking"
+    else:
+        return "Unknown"
+
 def main():
     """Generate population evolution plots for all experiments."""
-    
-    analysis_file = "../results/all_experiments_composition_analysis.json"
-    
+
+    analysis_file = "/mnt/c/Github/LLM-IPD-ARXIV2/visualization_results/all_8experiments_composition_analysis.json"
+
     try:
         data = load_experiment_data(analysis_file)
     except FileNotFoundError:
@@ -255,7 +294,7 @@ def main():
     # Generate plots for each experiment
     for experiment_name, experiment_data in sorted(experiments.items()):
         print(f"Generating plot for {experiment_name}...")
-        
+
         # Get shadow condition from first phase
         phases = experiment_data.get('phases', {})
         if phases:
@@ -263,23 +302,30 @@ def main():
             shadow_condition = first_phase.get('shadow_condition', 0)
         else:
             shadow_condition = 0
-        
+
+        # Get memory mode
+        memory_mode = get_memory_mode(experiment_name)
+
         # Create plot
-        fig = create_population_evolution_plot(experiment_data, experiment_name, shadow_condition)
+        fig = create_population_evolution_plot(experiment_data, experiment_name, shadow_condition, memory_mode)
         
         if fig:
-            # Save plot
-            output_filename = f"population_evolution_{experiment_name}.png"
-            fig.savefig(output_filename, dpi=300, bbox_inches='tight', 
+            # Create descriptive filename
+            memory_short = "anonymous" if "Anonymous" in memory_mode else "tracking"
+            shadow_percent = int(shadow_condition * 100)
+
+            # Save plot in visualization_results directory
+            output_filename = f"/mnt/c/Github/LLM-IPD-ARXIV2/visualization_results/population_evolution_shadow{shadow_percent}_{memory_short}.png"
+            fig.savefig(output_filename, dpi=300, bbox_inches='tight',
                        facecolor='white', edgecolor='none')
             print(f"Saved plot: {output_filename}")
-            
+
             # Also save as PDF for publication
-            pdf_filename = f"population_evolution_{experiment_name}.pdf"
-            fig.savefig(pdf_filename, bbox_inches='tight', 
+            pdf_filename = f"/mnt/c/Github/LLM-IPD-ARXIV2/visualization_results/population_evolution_shadow{shadow_percent}_{memory_short}.pdf"
+            fig.savefig(pdf_filename, bbox_inches='tight',
                        facecolor='white', edgecolor='none')
             print(f"Saved PDF: {pdf_filename}")
-            
+
             plt.close(fig)
         else:
             print(f"No data available for {experiment_name}")

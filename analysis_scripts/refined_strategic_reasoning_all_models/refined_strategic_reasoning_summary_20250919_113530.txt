@@ -1,0 +1,67 @@
+REFINED STRATEGIC REASONING ANALYSIS SUMMARY
+============================================================
+
+METHODOLOGY: Enhanced analysis with precise keyword definitions
+to minimize false positives and distinguish different types of reasoning.
+
+REFINED MATCH HISTORY SUMMARY
+--------------------------------------------------
+                      has_within_game_awareness_count  ...  invalid_first_round_history_sum
+provider temperature                                   ...                                 
+GPT4     1.0                                     8773  ...                              235
+GPT5     1.0                                    11245  ...                             1392
+Gemini   0.2                                     8621  ...                              486
+         0.7                                     9251  ...                              595
+         1.2                                     9418  ...                              487
+
+[5 rows x 9 columns]
+
+REFINED SHADOW FUTURE SUMMARY
+--------------------------------------------------
+                                       has_precise_shadow_awareness_count  ...  expected_game_length_present_mean
+provider temperature shadow_condition                                      ...                                   
+GPT4     1.0         0.05                                            4959  ...                             0.1625
+                     0.10                                            2673  ...                             0.1362
+                     0.25                                            1070  ...                             0.1449
+                     0.75                                              71  ...                             0.3803
+GPT5     1.0         0.05                                            5808  ...                             0.3979
+                     0.10                                            2902  ...                             0.3494
+                     0.25                                            1172  ...                             0.3831
+                     0.75                                            1363  ...                             0.5121
+Gemini   0.2         0.05                                            4557  ...                             0.0847
+                     0.10                                            2870  ...                             0.1028
+                     0.25                                            1079  ...                             0.0945
+                     0.75                                             115  ...                             0.0348
+         0.7         0.05                                            5276  ...                             0.1080
+                     0.10                                            2625  ...                             0.0910
+                     0.25                                            1085  ...                             0.1300
+                     0.75                                             265  ...                             0.1208
+         1.2         0.05                                            5372  ...                             0.0951
+                     0.10                                            2860  ...                             0.1458
+                     0.25                                            1040  ...                             0.1029
+                     0.75                                             146  ...                             0.0479
+
+[20 rows x 7 columns]
+
+REFINED FORMAL METHODS SUMMARY
+--------------------------------------------------
+                      uses_technical_formal_methods_count  ...  refined_formal_methods_score_mean
+provider temperature                                       ...                                   
+GPT4     1.0                                         8773  ...                             0.0595
+GPT5     1.0                                        11245  ...                             0.1160
+Gemini   0.2                                         8621  ...                             0.0036
+         0.7                                         9251  ...                             0.0125
+         1.2                                         9418  ...                             0.0106
+
+[5 rows x 7 columns]
+
+TECHNICAL SOPHISTICATION ANALYSIS
+--------------------------------------------------
+                      technical_sophistication_rate
+provider temperature                               
+GPT4     1.0                                 0.0517
+GPT5     1.0                                 0.0095
+Gemini   0.2                                 0.0032
+         0.7                                 0.0106
+         1.2                                 0.0081
+

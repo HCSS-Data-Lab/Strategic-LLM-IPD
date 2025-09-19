@@ -1,0 +1,60 @@
+IPD EXPERIMENT ANALYSIS REPORT
+==================================================
+
+OVERALL PERFORMANCE RANKINGS
+------------------------------
+1. Prober_p5i1: 2.948 points/move
+2. Detective_p5i1: 2.913 points/move
+3. GenerousTitForTat_p5i1: 2.828 points/move
+4. SoftGrudger_p5i1: 2.824 points/move
+5. GrimTrigger_p5i1: 2.807 points/move
+6. Gradual_p5i1: 2.803 points/move
+7. Claude4-Sonnet_T08_p5i1: 2.796 points/move
+8. Claude4-Sonnet_T02_p5i1: 2.773 points/move
+9. TitForTat_p5i1: 2.770 points/move
+10. QLearning_p5i1: 2.769 points/move
+11. Gemini20Flash_T12_p5i1: 2.767 points/move
+12. Gemini20Flash_T07_p5i1: 2.696 points/move
+13. GPT5mini_T1_p5i1: 2.654 points/move
+14. ForgivingGrimTrigger_p5i1: 2.644 points/move
+15. Random_p5i1: 2.617 points/move
+16. Gemini20Flash_T02_p5i1: 2.603 points/move
+17. WinStayLoseShift_p5i1: 2.588 points/move
+18. Bayesian_p5i1: 2.538 points/move
+19. GradientMetaLearner_p5i1: 2.531 points/move
+20. Claude4-Sonnet_T05_p5i1: 2.526 points/move
+21. Alternator_p5i1: 2.409 points/move
+22. GPT4.1mini_T1_p5i1: 2.376 points/move
+23. ThompsonSampling_p5i1: 2.275 points/move
+24. SuspiciousTitForTat_p5i1: 2.244 points/move
+25. Mistral-Medium_T07_p5i1: 2.243 points/move
+26. Mistral-Medium_T12_p5i1: 2.233 points/move
+27. Mistral-Medium_T02_p5i1: 2.191 points/move
+28. GPT5nano_T1_p5i1: 2.167 points/move
+
+
+STRATEGIC FINGERPRINT SUMMARY
+------------------------------
+
+shadow_10:
+  Alternator_p5i1: P(C|CC)=0.000, P(C|CD)=0.000, P(C|DC)=1.000, P(C|DD)=1.000
+  Bayesian_p5i1: P(C|CC)=1.000, P(C|CD)=0.000, P(C|DC)=0.727, P(C|DD)=0.000
+  Claude4-Sonnet_T02_p5i1: P(C|CC)=1.000, P(C|CD)=0.125, P(C|DC)=1.000, P(C|DD)=0.125
+  Claude4-Sonnet_T05_p5i1: P(C|CC)=0.994, P(C|CD)=0.095, P(C|DC)=0.727, P(C|DD)=0.229
+  Claude4-Sonnet_T08_p5i1: P(C|CC)=0.987, P(C|CD)=0.111, P(C|DC)=0.647, P(C|DD)=0.800
+
+
+HORIZON AWARENESS ANALYSIS
+------------------------------
+GPT5nano_T1_p5i1: 1.000
+GPT5mini_T1_p5i1: 0.989
+Mistral-Medium_T12_p5i1: 0.950
+GPT4.1mini_T1_p5i1: 0.945
+Mistral-Medium_T07_p5i1: 0.941
+Mistral-Medium_T02_p5i1: 0.926
+Gemini20Flash_T07_p5i1: 0.924
+Claude4-Sonnet_T05_p5i1: 0.922
+Gemini20Flash_T12_p5i1: 0.909
+Claude4-Sonnet_T08_p5i1: 0.898
+Gemini20Flash_T02_p5i1: 0.896
+Claude4-Sonnet_T02_p5i1: 0.886
