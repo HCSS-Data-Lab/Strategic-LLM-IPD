@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m pytest test/ -v)",
+      "Bash(pip install:*)",
+      "Bash(python3:*)",
+      "Bash(rm:*)",
+      "Bash(python -m pytest test/test_thompson_sampling_agent.py -v)",
+      "Bash(find:*)",
+      "Bash(for:*)",
+      "Bash(do)",
+      "Bash(if [ -f \"$exp/config.json\" ])",
+      "Bash(then)",
+      "Bash(else)",
+      "Bash(fi)",
+      "Bash(done)",
+      "mcp__overleaf__read_file",
+      "mcp__overleaf__list_files",
+      "Bash(python:*)",
+      "Bash(timeout:*)",
+      "Bash(grep:*)",
+      "Bash(do echo \"=== $exp ===\")",
+      "Bash(head:*)"
+    ],
+    "deny": []
+  }
+}

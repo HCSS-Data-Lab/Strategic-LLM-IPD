@@ -1,0 +1,66 @@
+STRATEGIC REASONING ANALYSIS SUMMARY
+==================================================
+
+MATCH HISTORY SUMMARY
+----------------------------------------
+                      has_history_awareness_count  ...  history_awareness_score_mean
+provider temperature                               ...                              
+GPT4     1.0                                 8773  ...                         4.049
+GPT5     1.0                                11245  ...                         2.286
+Gemini   0.2                                 8621  ...                         3.658
+         0.7                                 9251  ...                         3.675
+         1.2                                 9418  ...                         3.485
+
+[5 rows x 8 columns]
+
+SHADOW FUTURE SUMMARY
+----------------------------------------
+                                       has_shadow_awareness_count  ...  shadow_awareness_score_mean
+provider temperature shadow_condition                              ...                             
+GPT4     1.0         0.05                                    4959  ...                        2.143
+                     0.10                                    2673  ...                        2.059
+                     0.25                                    1070  ...                        2.126
+                     0.75                                      71  ...                        2.366
+GPT5     1.0         0.05                                    5808  ...                        3.829
+                     0.10                                    2902  ...                        3.968
+                     0.25                                    1172  ...                        3.742
+                     0.75                                    1363  ...                        4.833
+Gemini   0.2         0.05                                    4557  ...                        0.772
+                     0.10                                    2870  ...                        0.650
+                     0.25                                    1079  ...                        0.869
+                     0.75                                     115  ...                        0.574
+         0.7         0.05                                    5276  ...                        0.735
+                     0.10                                    2625  ...                        0.829
+                     0.25                                    1085  ...                        1.061
+                     0.75                                     265  ...                        1.891
+         1.2         0.05                                    5372  ...                        0.722
+                     0.10                                    2860  ...                        0.944
+                     0.25                                    1040  ...                        0.953
+                     0.75                                     146  ...                        1.185
+
+[20 rows x 7 columns]
+
+FORMAL METHODS SUMMARY
+----------------------------------------
+                      uses_formal_methods_count  ...  formal_methods_score_mean
+provider temperature                             ...                           
+GPT4     1.0                               8773  ...                      1.471
+GPT5     1.0                              11245  ...                      2.001
+Gemini   0.2                               8621  ...                      1.333
+         0.7                               9251  ...                      1.468
+         1.2                               9418  ...                      1.443
+
+[5 rows x 8 columns]
+
+TEMPERATURE SENSITIVITY
+----------------------------------------
+                      high_sophistication_rate  ...  avg_formal_score
+provider temperature                            ...                  
+GPT4     1.0                             0.452  ...             1.471
+GPT5     1.0                             0.405  ...             2.001
+Gemini   0.2                             0.348  ...             1.333
+         0.7                             0.385  ...             1.468
+         1.2                             0.383  ...             1.443
+
+[5 rows x 3 columns]
+

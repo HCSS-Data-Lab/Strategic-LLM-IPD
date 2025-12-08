@@ -1,0 +1,72 @@
+% Strategic Footprints for 5% Shadow Length Experiments
+% Generated from IPD Tournament Results
+% 16 figures total: 4 LLM families × 2 footprint types × 2 memory modes
+
+\section*{Strategic Footprints Summary - 5\% Shadow Length}
+
+This document catalogs the strategic footprints generated for the 5\% shadow length experiments (longest games, expected 20 rounds). Strategic footprints show conditional cooperation probabilities based on the previous round's outcome, while extended strategic footprints show cooperation rates conditioned on the dominant outcome pattern in the match.
+
+\subsection*{Available Figures (16 total)}
+
+\subsubsection*{Claude4-Sonnet Strategic Footprints}
+\begin{itemize}
+\item \texttt{strategic\_footprint\_claude4\_sonnet\_5percent\_anonymous.png} - Memory-1 strategic footprint (Anonymous mode)
+\item \texttt{strategic\_footprint\_claude4\_sonnet\_5percent\_tracking.png} - Memory-1 strategic footprint (Tracking mode)
+\item \texttt{extended\_strategic\_footprint\_claude4\_sonnet\_5percent\_anonymous.png} - Extended strategic footprint (Anonymous mode)
+\item \texttt{extended\_strategic\_footprint\_claude4\_sonnet\_5percent\_tracking.png} - Extended strategic footprint (Tracking mode)
+\end{itemize}
+
+\subsubsection*{Mistral Medium Strategic Footprints}
+\begin{itemize}
+\item \texttt{strategic\_footprint\_mistral\_medium\_5percent\_anonymous.png} - Memory-1 strategic footprint (Anonymous mode)
+\item \texttt{strategic\_footprint\_mistral\_medium\_5percent\_tracking.png} - Memory-1 strategic footprint (Tracking mode)
+\item \texttt{extended\_strategic\_footprint\_mistral\_medium\_5percent\_anonymous.png} - Extended strategic footprint (Anonymous mode)
+\item \texttt{extended\_strategic\_footprint\_mistral\_medium\_5percent\_tracking.png} - Extended strategic footprint (Tracking mode)
+\end{itemize}
+
+\subsubsection*{Gemini-2.0-Flash Strategic Footprints}
+\begin{itemize}
+\item \texttt{strategic\_footprint\_gemini\_2.0\_flash\_5percent\_anonymous.png} - Memory-1 strategic footprint (Anonymous mode)
+\item \texttt{strategic\_footprint\_gemini\_2.0\_flash\_5percent\_tracking.png} - Memory-1 strategic footprint (Tracking mode)
+\item \texttt{extended\_strategic\_footprint\_gemini\_2.0\_flash\_5percent\_anonymous.png} - Extended strategic footprint (Anonymous mode)
+\item \texttt{extended\_strategic\_footprint\_gemini\_2.0\_flash\_5percent\_tracking.png} - Extended strategic footprint (Tracking mode)
+\end{itemize}
+
+\subsubsection*{OpenAI Strategic Footprints}
+\begin{itemize}
+\item \texttt{strategic\_footprint\_openai\_5percent\_anonymous.png} - Memory-1 strategic footprint (Anonymous mode) \\
+\textit{Includes: GPT4.1mini, GPT5mini, GPT5nano}
+\item \texttt{strategic\_footprint\_openai\_5percent\_tracking.png} - Memory-1 strategic footprint (Tracking mode) \\
+\textit{Includes: GPT4.1mini, GPT5mini, GPT5nano}
+\item \texttt{extended\_strategic\_footprint\_openai\_5percent\_anonymous.png} - Extended strategic footprint (Anonymous mode) \\
+\textit{Includes: GPT4.1mini, GPT5mini, GPT5nano}
+\item \texttt{extended\_strategic\_footprint\_openai\_5percent\_tracking.png} - Extended strategic footprint (Tracking mode) \\
+\textit{Note: Only available for some models due to data limitations}
+\end{itemize}
+
+\subsection*{Strategic Footprint Interpretation}
+
+\paragraph{Memory-1 Strategic Footprint:} Shows probability of cooperation given the previous round outcome:
+\begin{itemize}
+\item \textbf{P(C|CC)}: Cooperation after mutual cooperation
+\item \textbf{P(C|DC)}: Cooperation after defecting against cooperator (exploitation)
+\item \textbf{P(C|CD)}: Cooperation after being exploited
+\item \textbf{P(C|DD)}: Cooperation after mutual defection
+\end{itemize}
+
+\paragraph{Extended Strategic Footprint:} Shows cooperation rates in matches dominated by specific outcome patterns:
+\begin{itemize}
+\item \textbf{CC-dominated}: Matches where mutual cooperation is most common
+\item \textbf{CD-dominated}: Matches where agent cooperates, opponent defects most often
+\item \textbf{DC-dominated}: Matches where agent defects, opponent cooperates most often
+\item \textbf{DD-dominated}: Matches where mutual defection is most common
+\end{itemize}
+
+\subsection*{Experimental Context}
+\begin{itemize}
+\item \textbf{Shadow Length}: 5\% (δ = 0.05)
+\item \textbf{Expected Game Length}: 20 rounds
+\item \textbf{Game Type}: Very long interactions enabling complex strategic patterns
+\item \textbf{Anonymous Mode}: experiment\_20250908\_081108
+\item \textbf{Tracking Mode}: experiment\_20250912\_153315
+\end{itemize}

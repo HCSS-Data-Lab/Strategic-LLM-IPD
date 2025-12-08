@@ -1,0 +1,220 @@
+IPD EXPERIMENT ANALYSIS REPORT
+==================================================
+
+OVERALL PERFORMANCE RANKINGS
+------------------------------
+1. Prober_p4i1: 3.098 points/move
+2. ThompsonSampling_p3i1: 3.071 points/move
+3. SuspiciousTitForTat_p5i1: 2.968 points/move
+4. GrimTrigger_p2i1: 2.958 points/move
+5. ThompsonSampling_p5i1: 2.949 points/move
+6. Bayesian_p3i1: 2.932 points/move
+7. Detective_p4i1: 2.917 points/move
+8. Random_p3i1: 2.889 points/move
+9. SuspiciousTitForTat_p4i1: 2.883 points/move
+10. Alternator_p2i1: 2.879 points/move
+11. Mistral-Medium_T12_p1i1: 2.865 points/move
+12. TitForTat_p3i1: 2.862 points/move
+13. Alternator_p4i1: 2.854 points/move
+14. GPT5nano_T1_p5i1: 2.849 points/move
+15. ForgivingGrimTrigger_p4i1: 2.833 points/move
+16. SoftGrudger_p2i1: 2.828 points/move
+17. Gemini20Flash_T02_p2i1: 2.822 points/move
+18. WinStayLoseShift_p5i1: 2.819 points/move
+19. GradientMetaLearner_p3i1: 2.819 points/move
+20. ThompsonSampling_p1i1: 2.819 points/move
+21. GPT5mini_T1_p2i1: 2.818 points/move
+22. QLearning_p4i1: 2.811 points/move
+23. Random_p4i1: 2.809 points/move
+24. Mistral-Medium_T12_p3i1: 2.808 points/move
+25. GenerousTitForTat_p5i1: 2.805 points/move
+26. Gemini20Flash_T02_p5i1: 2.803 points/move
+27. Gemini20Flash_T12_p4i1: 2.800 points/move
+28. GPT4.1mini_T1_p5i1: 2.795 points/move
+29. GenerousTitForTat_p3i1: 2.791 points/move
+30. Mistral-Medium_T02_p2i1: 2.789 points/move
+31. WinStayLoseShift_p4i1: 2.789 points/move
+32. SoftGrudger_p4i1: 2.782 points/move
+33. Claude4-Sonnet_T05_p1i1: 2.779 points/move
+34. ForgivingGrimTrigger_p5i1: 2.772 points/move
+35. GrimTrigger_p1i1: 2.761 points/move
+36. Claude4-Sonnet_T05_p5i1: 2.761 points/move
+37. Gradual_p5i1: 2.758 points/move
+38. GrimTrigger_p5i1: 2.755 points/move
+39. Claude4-Sonnet_T08_p3i1: 2.754 points/move
+40. ThompsonSampling_p2i1: 2.753 points/move
+41. Gemini20Flash_T02_p3i1: 2.750 points/move
+42. Gradual_p2i1: 2.745 points/move
+43. SuspiciousTitForTat_p3i1: 2.743 points/move
+44. Alternator_p3i1: 2.740 points/move
+45. Mistral-Medium_T07_p3i1: 2.737 points/move
+46. SoftGrudger_p5i1: 2.737 points/move
+47. Claude4-Sonnet_T08_p1i1: 2.736 points/move
+48. GPT5mini_T1_p4i1: 2.736 points/move
+49. Claude4-Sonnet_T05_p2i1: 2.735 points/move
+50. Gemini20Flash_T12_p1i1: 2.733 points/move
+51. Claude4-Sonnet_T02_p3i1: 2.731 points/move
+52. Claude4-Sonnet_T08_p2i1: 2.729 points/move
+53. GPT5mini_T1_p5i1: 2.726 points/move
+54. Gemini20Flash_T12_p5i1: 2.726 points/move
+55. TitForTat_p5i1: 2.725 points/move
+56. Gemini20Flash_T12_p3i1: 2.724 points/move
+57. Bayesian_p5i1: 2.722 points/move
+58. GPT4.1mini_T1_p4i1: 2.719 points/move
+59. WinStayLoseShift_p2i1: 2.717 points/move
+60. GenerousTitForTat_p2i1: 2.713 points/move
+61. Gradual_p3i1: 2.712 points/move
+62. TitForTat_p2i1: 2.703 points/move
+63. TitForTat_p4i1: 2.697 points/move
+64. GPT5nano_T1_p2i1: 2.694 points/move
+65. GradientMetaLearner_p1i1: 2.691 points/move
+66. Bayesian_p1i1: 2.689 points/move
+67. Gemini20Flash_T02_p1i1: 2.689 points/move
+68. Gradual_p4i1: 2.688 points/move
+69. GPT4.1mini_T1_p3i1: 2.673 points/move
+70. GrimTrigger_p3i1: 2.670 points/move
+71. Claude4-Sonnet_T05_p4i1: 2.667 points/move
+72. Gemini20Flash_T02_p4i1: 2.664 points/move
+73. Prober_p5i1: 2.663 points/move
+74. SuspiciousTitForTat_p2i1: 2.660 points/move
+75. GrimTrigger_p4i1: 2.660 points/move
+76. Bayesian_p4i1: 2.659 points/move
+77. Gradual_p1i1: 2.657 points/move
+78. ForgivingGrimTrigger_p3i1: 2.657 points/move
+79. GPT4.1mini_T1_p2i1: 2.655 points/move
+80. ForgivingGrimTrigger_p2i1: 2.653 points/move
+81. QLearning_p5i1: 2.651 points/move
+82. Claude4-Sonnet_T08_p5i1: 2.648 points/move
+83. GenerousTitForTat_p1i1: 2.646 points/move
+84. Gemini20Flash_T07_p4i1: 2.644 points/move
+85. Detective_p3i1: 2.643 points/move
+86. SoftGrudger_p3i1: 2.638 points/move
+87. Bayesian_p2i1: 2.638 points/move
+88. ForgivingGrimTrigger_p1i1: 2.636 points/move
+89. SoftGrudger_p1i1: 2.630 points/move
+90. Gemini20Flash_T07_p3i1: 2.629 points/move
+91. TitForTat_p1i1: 2.629 points/move
+92. GradientMetaLearner_p5i1: 2.624 points/move
+93. Mistral-Medium_T12_p5i1: 2.624 points/move
+94. Random_p2i1: 2.620 points/move
+95. Claude4-Sonnet_T05_p3i1: 2.617 points/move
+96. GPT5mini_T1_p3i1: 2.614 points/move
+97. QLearning_p3i1: 2.613 points/move
+98. Mistral-Medium_T12_p2i1: 2.612 points/move
+99. Alternator_p1i1: 2.606 points/move
+100. Prober_p3i1: 2.604 points/move
+101. Mistral-Medium_T07_p1i1: 2.602 points/move
+102. Detective_p5i1: 2.598 points/move
+103. Mistral-Medium_T02_p4i1: 2.596 points/move
+104. GenerousTitForTat_p4i1: 2.596 points/move
+105. Detective_p2i1: 2.592 points/move
+106. GPT5mini_T1_p1i1: 2.590 points/move
+107. Gemini20Flash_T07_p5i1: 2.589 points/move
+108. Alternator_p5i1: 2.586 points/move
+109. SuspiciousTitForTat_p1i1: 2.580 points/move
+110. WinStayLoseShift_p3i1: 2.576 points/move
+111. Claude4-Sonnet_T02_p1i1: 2.567 points/move
+112. Mistral-Medium_T02_p1i1: 2.565 points/move
+113. Gemini20Flash_T07_p1i1: 2.563 points/move
+114. Mistral-Medium_T02_p3i1: 2.562 points/move
+115. Claude4-Sonnet_T02_p5i1: 2.562 points/move
+116. Mistral-Medium_T07_p5i1: 2.537 points/move
+117. Gemini20Flash_T07_p2i1: 2.533 points/move
+118. GPT5nano_T1_p3i1: 2.532 points/move
+119. QLearning_p1i1: 2.530 points/move
+120. Prober_p1i1: 2.524 points/move
+121. Gemini20Flash_T12_p2i1: 2.522 points/move
+122. GPT4.1mini_T1_p1i1: 2.522 points/move
+123. Mistral-Medium_T12_p4i1: 2.510 points/move
+124. Prober_p2i1: 2.505 points/move
+125. WinStayLoseShift_p1i1: 2.494 points/move
+126. ThompsonSampling_p4i1: 2.487 points/move
+127. GPT5nano_T1_p1i1: 2.478 points/move
+128. QLearning_p2i1: 2.471 points/move
+129. Mistral-Medium_T02_p5i1: 2.470 points/move
+130. Detective_p1i1: 2.467 points/move
+131. Claude4-Sonnet_T08_p4i1: 2.461 points/move
+132. Claude4-Sonnet_T02_p2i1: 2.458 points/move
+133. Random_p1i1: 2.457 points/move
+134. Mistral-Medium_T07_p4i1: 2.419 points/move
+135. Random_p5i1: 2.411 points/move
+136. GPT5nano_T1_p4i1: 2.400 points/move
+137. Mistral-Medium_T07_p2i1: 2.389 points/move
+138. GradientMetaLearner_p2i1: 2.368 points/move
+139. Claude4-Sonnet_T02_p4i1: 2.355 points/move
+140. GradientMetaLearner_p4i1: 2.291 points/move
+
+
+STRATEGIC FINGERPRINT SUMMARY
+------------------------------
+
+shadow_25:
+  Alternator_p1i1: P(C|CC)=0.000, P(C|CD)=0.000, P(C|DC)=1.000, P(C|DD)=1.000
+  Alternator_p2i1: P(C|CC)=0.000, P(C|CD)=0.000, P(C|DC)=1.000, P(C|DD)=1.000
+  Alternator_p3i1: P(C|CC)=0.000, P(C|CD)=0.000, P(C|DC)=1.000, P(C|DD)=1.000
+  Alternator_p4i1: P(C|CC)=0.000, P(C|CD)=0.000, P(C|DC)=1.000, P(C|DD)=1.000
+  Alternator_p5i1: P(C|CC)=0.000, P(C|CD)=0.000, P(C|DC)=1.000, P(C|DD)=1.000
+
+
+HORIZON AWARENESS ANALYSIS
+------------------------------
+Claude4-Sonnet_T02_p1i1: 1.000
+Claude4-Sonnet_T05_p1i1: 1.000
+Claude4-Sonnet_T08_p1i1: 1.000
+GPT4.1mini_T1_p1i1: 1.000
+GPT5nano_T1_p2i1: 1.000
+GPT5mini_T1_p2i1: 1.000
+GPT5mini_T1_p1i1: 1.000
+GPT5nano_T1_p1i1: 1.000
+GPT5mini_T1_p4i1: 1.000
+Mistral-Medium_T12_p1i1: 1.000
+Mistral-Medium_T07_p1i1: 1.000
+Mistral-Medium_T07_p3i1: 0.992
+Mistral-Medium_T12_p4i1: 0.990
+GPT5mini_T1_p3i1: 0.990
+Mistral-Medium_T07_p5i1: 0.989
+GPT5mini_T1_p5i1: 0.988
+Mistral-Medium_T02_p1i1: 0.986
+Gemini20Flash_T12_p1i1: 0.983
+Mistral-Medium_T07_p4i1: 0.983
+GPT4.1mini_T1_p2i1: 0.983
+Mistral-Medium_T07_p2i1: 0.979
+Claude4-Sonnet_T02_p3i1: 0.977
+GPT4.1mini_T1_p5i1: 0.975
+GPT5nano_T1_p5i1: 0.972
+GPT5nano_T1_p4i1: 0.971
+Mistral-Medium_T12_p2i1: 0.970
+Mistral-Medium_T02_p2i1: 0.967
+Gemini20Flash_T02_p3i1: 0.966
+Claude4-Sonnet_T02_p5i1: 0.964
+Claude4-Sonnet_T05_p4i1: 0.963
+Claude4-Sonnet_T05_p5i1: 0.963
+Gemini20Flash_T02_p4i1: 0.963
+Claude4-Sonnet_T08_p4i1: 0.960
+Mistral-Medium_T02_p3i1: 0.958
+Mistral-Medium_T12_p5i1: 0.954
+GPT5nano_T1_p3i1: 0.952
+Claude4-Sonnet_T08_p3i1: 0.951
+GPT4.1mini_T1_p3i1: 0.950
+Claude4-Sonnet_T08_p5i1: 0.945
+Mistral-Medium_T12_p3i1: 0.939
+Claude4-Sonnet_T05_p2i1: 0.938
+Claude4-Sonnet_T05_p3i1: 0.935
+GPT4.1mini_T1_p4i1: 0.933
+Mistral-Medium_T02_p5i1: 0.932
+Claude4-Sonnet_T08_p2i1: 0.927
+Mistral-Medium_T02_p4i1: 0.923
+Gemini20Flash_T02_p5i1: 0.915
+Gemini20Flash_T07_p2i1: 0.913
+Claude4-Sonnet_T02_p4i1: 0.904
+Claude4-Sonnet_T02_p2i1: 0.898
+Gemini20Flash_T07_p5i1: 0.884
+Gemini20Flash_T07_p3i1: 0.879
+Gemini20Flash_T02_p2i1: 0.878
+Gemini20Flash_T07_p4i1: 0.861
+Gemini20Flash_T12_p5i1: 0.858
+Gemini20Flash_T12_p4i1: 0.847
+Gemini20Flash_T12_p3i1: 0.816
+Gemini20Flash_T02_p1i1: 0.796
+Gemini20Flash_T12_p2i1: 0.744
+Gemini20Flash_T07_p1i1: 0.723

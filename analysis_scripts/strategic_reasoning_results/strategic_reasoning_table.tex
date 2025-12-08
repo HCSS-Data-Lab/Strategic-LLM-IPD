@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{Strategic Reasoning Analysis Summary by LLM Provider}
+\label{tab:strategic_reasoning}
+\begin{tabular}{lccccccc}
+\toprule
+Provider & History Awareness & Explicit History & Shadow Awareness & Termination Prob & Formal Methods & Game Theory & Opponent Modeling \\
+\midrule
+GPT4 & 0.990 & 0.834 & 0.897 & 0.725 & 0.867 & 0.175 & 0.728 \\
+GPT5 & 0.922 & 0.572 & 0.981 & 0.943 & 0.905 & 0.098 & 0.729 \\
+Gemini & 0.993 & 0.884 & 0.506 & 0.357 & 0.881 & 0.367 & 0.837 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Note: Values represent the proportion of reasoning instances that exhibit each characteristic.
+\item History Awareness: References to game history or opponent behavior.
+\item Shadow Awareness: Consideration of future rounds and termination probability.
+\item Formal Methods: Use of game theory, decision theory, or formal modeling approaches.
+\end{tablenotes}
+\end{table}
