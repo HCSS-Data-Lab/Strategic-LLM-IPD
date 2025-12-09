@@ -2,7 +2,10 @@
 
 **Evaluating Strategic Intelligence in Large Language Models via Evolutionary Iterated Prisoner’s Dilemma**
 
-This repository implements the full experimental framework, agent implementations, and analysis pipeline described in our study *“Do LLMs Possess Strategic Intelligence? Testing LLMs in Iterated Prisoner’s Dilemmas.”*
+This repository implements the full experimental framework based on work by Payne et al. (2025):  
+[Payne et al. — LLM-IPD-ARXIV GitHub Repository](https://github.com/kennethpayne01/LLM-IPD-ARXIV)
+
+It also contains the agent implementations and analysis pipeline described in our study *“Do LLMs Possess Strategic Intelligence? Testing LLMs in Iterated Prisoner’s Dilemmas.”*
 
 ---
 
